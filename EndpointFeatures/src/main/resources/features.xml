@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<features name="FabricEndpoints-${project.version}">
+
+    <feature name="EndpointClient" description="Endpoint :: Client" version="${project.version}">
+        <feature version="${camel.version}">camel-jetty</feature>
+        <feature version="${fabric.version}">fabric-camel</feature>
+        <bundle>mvn:com.iqmsoft.fabric/EndpointClient/1.0-SNAPSHOT</bundle>
+    </feature>
+
+    <feature name="EndpointConsumer" description="Endpoint :: Consumer" version="${project.version}">
+        <feature version="${camel.version}">camel-jetty</feature>
+        <feature version="${fabric.version}">fabric-camel</feature>
+        <bundle>mvn:com.iqmsoft.fabric/EndpointConsumer/1.0-SNAPSHOT</bundle>
+    </feature>
+</features>
